@@ -8,7 +8,7 @@ Created on Sun Apr  5 10:17:42 2026
 import random
 
 # print('Assalomu alaykum')
-# sonlar_toplami=list(range(0,5))
+# sonlar_toplami=list(range(0,1000))
 # while True:
 #     tasodif=random.choice(sonlar_toplami)
 #     print(f'Men bir son oyladim topingchi ? uzunligi={len(str(tasodif))}  ')
@@ -58,32 +58,29 @@ import random
 #             print(' Hatolik orada son qolmadi tanlashga !')
 #             break
 
+
+
 a = 0
-b = 1000
+b = 1_000_000_000 # 0 dan 10
 
 while True:
     tasodif = (a + b) // 2
     print(f"{a} va {b} orasidan taxmin: {tasodif}")
 
-    soroq = input("to‘g‘rimi? (ha/yoq): ").lower()
+    soroq = input("to‘g‘rimi? (h/y): ").lower()
 
-    if soroq == 'ha':
+    if soroq == 'h':
         print('Son topildi!')
         break
 
-    savol = input("kattaroqmi yoki kichikroq? (katta/kichik): ").lower()
+    savol = input("kattaroqmi yoki kichikroq? (kat/kich): ").lower()
 
-    if savol == 'katta':
+    if savol == 'kat':
         a = tasodif + 1
-    elif savol == 'kichik':
+    elif savol == 'kich':
         b = tasodif - 1
 
     if a > b:
         print("Xatolik! Noto‘g‘ri javob berildi.")
         break
             
-150      
-         
-      
-        
-    
